@@ -14,10 +14,7 @@ public class ClosePopup {
 	public static void closeWWpopUp(WebDriver driver)
 	{
 		
-		//WebDriverWait wait = new WebDriverWait(driver, 10);
-	   // WebElement noThanksLink = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'No Thanks')]")));
 	    WebElement noThanksLink = driver.findElement(By.xpath("//button[contains(text(),'No Thanks')]"));
-
 	    noThanksLink.click();
 
 
