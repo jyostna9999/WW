@@ -14,6 +14,6 @@ Question 2: Automated tests for scenarios using WebDriver
 
 [GitHub Link](https://github.com/jyostna9999/WW/blob/master/src/test/java/com/ww/assessment/jyostna/com/questions/WebDriverTests.java)
 
-[Page Objects] (https://github.com/jyostna9999/WW/tree/master/src/test/java/pageObjects)
+[Page Objects](https://github.com/jyostna9999/WW/tree/master/src/test/java/pageObjects)
 
 
