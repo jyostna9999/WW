@@ -1,5 +1,6 @@
 package com.ww.assessment.jyostna.com.questions;
 
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -9,8 +10,10 @@ import java.io.IOException;
 import java.net.URI;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -27,34 +30,31 @@ public class FileExists {
 		file = new File("Dictionary.txt");
 		String filePath = file.getAbsolutePath();
 		doesFileExist(filePath);
-
 		
-		HashMap<String, String> map = new HashMap<String, String>();
+		LinkedHashMap<String, ArrayList<String>> map = new LinkedHashMap<String, ArrayList<String>>();
 		BufferedReader reader = new BufferedReader(new FileReader(filePath));
 		
-
-		  while ((line = reader.readLine()) != null)
+		while ((line = reader.readLine()) != null)
+			
 		    {
-			  
-		        String[] parts = line.split("–", 2);
-		        if (parts.length >= 2)
-		        {
-		            String key = parts[0];
-		            String value = parts[1];
-		            map.put(key, value);
-		        } 
-		        else 
-		        {
-		            System.out.println("ignoring line: " + line);
-		        }
+		        String[] parts = line.split("–");
+		        String[] values = parts[1].split(",");
+		        
+		        ArrayList<String> tempList = new ArrayList<String>();
+		        
+		        for(int i = 0; i < values.length; i++)
+		        	
+		        	tempList.add(values[i]);
+		             
+		            map.put(parts[0], tempList);
+		     
 		    }
 		 
-		 System.out.println(map);
-		 
-		 for (Entry<String, String> mapDisplay : map.entrySet())
+		 for (Entry<String, ArrayList<String>> mapDisplay : map.entrySet())
 		    {
 		        System.out.println(mapDisplay.getKey());
-		        System.out.println(mapDisplay.getValue());
+		        for(String value: mapDisplay.getValue())
+		        System.out.println(value);
 
 		    }
 		 
@@ -74,7 +74,8 @@ public class FileExists {
 	      
 	      catch (Exception e)
 	      {
-	         e.printStackTrace();
+	        e.printStackTrace();
+	        System.out.println("File not found");
 	      }
 	}
 }

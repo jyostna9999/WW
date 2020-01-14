@@ -125,7 +125,7 @@ public class WebDriverTests {
 	{
 		//9 - Create a method to print the number of meeting the each person(under the scheduled time) has a particular day of the week
 
-	    //Call the method here
+	    //Call the method here and enter the dayOfWeek in the first param below
 		
 		PrintMeetingsDayWeek.PrintMeetings("Mon", driver);
 	}

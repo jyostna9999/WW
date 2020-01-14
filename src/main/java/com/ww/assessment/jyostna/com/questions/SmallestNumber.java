@@ -9,10 +9,10 @@ public class SmallestNumber {
 		// TODO Auto-generated method stub
 
 	    int input;
-        int[] arraylist = new int[500]; // Create array object.
+        int[] arraylist = new int[500];
  
-        random(arraylist); // Create random numbers.
-        arraySort(arraylist); // Sort random numbers.
+        random(arraylist); // Creates random numbers
+        arraySort(arraylist); // Sorts random numbers
  
         do{
             System.out.print("Please enter a number between 1 and 500: ");
@@ -26,29 +26,40 @@ public class SmallestNumber {
                 result += " " + arraylist[j];
             }
  
-        // Print all random number.
+        // Print all random numbers
         System.out.println("The Numbers are" + result);
  
         // Print user input nth number.
-        if(input == 1){
+        if(input == 1)
+        {
             System.out.println("The " + input + "st number is " + findNthSmallestNumber(input,arraylist) + ".");
-        }else if(input == 2){
+            
+        }
+        else if(input == 2)
+        {
             System.out.println("The " + input + "nd number is " + findNthSmallestNumber(input,arraylist) + ".");
-        }else if(input == 3){
+            
+        }
+        else if(input == 3)
+        {
             System.out.println("The " + input + "rd number is " + findNthSmallestNumber(input,arraylist) + ".");
-        }else{
+            
+        }
+        else
+        {
             System.out.println("The " + input + "th number is " + findNthSmallestNumber(input,arraylist) + ".");
         }   
-    } // End of main method.
+    } 
  
     /** random number find method */
-    public static void random(int[] arraylist){
-        for(int i=0; i < arraylist.length; i++){
-           // arraylist[i]    = (int) (Math.random() * 100); 
+    public static void random(int[] arraylist)
+    {
+        for(int i=0; i < arraylist.length; i++)
+        {
         	Random r = new Random();
         	arraylist[i]  = r.nextInt(500);
         }
-    } // End of random method.
+    } 
  
     /** Array sort method */
     public static void arraySort(int [] arraylist){
@@ -62,7 +73,7 @@ public class SmallestNumber {
                 }
             }
         }
-    } // End of arraySort method.
+    } 
  
     /** find nth smallest method. */
     public static int findNthSmallestNumber(int n, int[] numbers){

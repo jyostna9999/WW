@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18359" started-at="2020-01-13T04:42:18 EST" finished-at="2020-01-13T04:42:36 EST">
+  <suite name="Suite" duration-ms="19971" started-at="2020-01-13T23:12:27 EST" finished-at="2020-01-13T23:12:47 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18359" started-at="2020-01-13T04:42:18 EST" finished-at="2020-01-13T04:42:36 EST">
+    <test name="Test" duration-ms="19971" started-at="2020-01-13T23:12:27 EST" finished-at="2020-01-13T23:12:47 EST">
       <class name="com.ww.assessment.jyostna.com.questions.WebDriverTests">
-        <test-method status="PASS" signature="verifyLandingPageTitle()[pri:1, instance:com.ww.assessment.jyostna.com.questions.WebDriverTests@68bbe345]" name="verifyLandingPageTitle" duration-ms="10808" started-at="2020-01-13T04:42:18 EST" finished-at="2020-01-13T04:42:29 EST">
+        <test-method status="PASS" signature="verifyLandingPageTitle()[pri:1, instance:com.ww.assessment.jyostna.com.questions.WebDriverTests@2b6faea6]" name="verifyLandingPageTitle" duration-ms="12206" started-at="2020-01-13T23:12:27 EST" finished-at="2020-01-13T23:12:39 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLandingPageTitle -->
-        <test-method status="PASS" signature="verifyFindAStudioPageTitle()[pri:2, instance:com.ww.assessment.jyostna.com.questions.WebDriverTests@68bbe345]" name="verifyFindAStudioPageTitle" duration-ms="4169" started-at="2020-01-13T04:42:29 EST" finished-at="2020-01-13T04:42:33 EST">
+        <test-method status="PASS" signature="verifyFindAStudioPageTitle()[pri:2, instance:com.ww.assessment.jyostna.com.questions.WebDriverTests@2b6faea6]" name="verifyFindAStudioPageTitle" duration-ms="4433" started-at="2020-01-13T23:12:39 EST" finished-at="2020-01-13T23:12:43 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFindAStudioPageTitle -->
-        <test-method status="PASS" signature="verifyFindAStudioSearchResult1()[pri:3, instance:com.ww.assessment.jyostna.com.questions.WebDriverTests@68bbe345]" name="verifyFindAStudioSearchResult1" duration-ms="1820" started-at="2020-01-13T04:42:33 EST" finished-at="2020-01-13T04:42:35 EST">
+        <test-method status="PASS" signature="verifyFindAStudioSearchResult1()[pri:3, instance:com.ww.assessment.jyostna.com.questions.WebDriverTests@2b6faea6]" name="verifyFindAStudioSearchResult1" duration-ms="2159" started-at="2020-01-13T23:12:43 EST" finished-at="2020-01-13T23:12:45 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFindAStudioSearchResult1 -->
-        <test-method status="PASS" signature="PrintTodaysHrsOfOperation()[pri:4, instance:com.ww.assessment.jyostna.com.questions.WebDriverTests@68bbe345]" name="PrintTodaysHrsOfOperation" duration-ms="803" started-at="2020-01-13T04:42:35 EST" finished-at="2020-01-13T04:42:36 EST">
+        <test-method status="PASS" signature="PrintTodaysHrsOfOperation()[pri:4, instance:com.ww.assessment.jyostna.com.questions.WebDriverTests@2b6faea6]" name="PrintTodaysHrsOfOperation" duration-ms="611" started-at="2020-01-13T23:12:45 EST" finished-at="2020-01-13T23:12:46 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrintTodaysHrsOfOperation -->
-        <test-method status="PASS" signature="printMeetings()[pri:5, instance:com.ww.assessment.jyostna.com.questions.WebDriverTests@68bbe345]" name="printMeetings" duration-ms="650" started-at="2020-01-13T04:42:36 EST" finished-at="2020-01-13T04:42:36 EST">
+        <test-method status="PASS" signature="printMeetings()[pri:5, instance:com.ww.assessment.jyostna.com.questions.WebDriverTests@2b6faea6]" name="printMeetings" duration-ms="484" started-at="2020-01-13T23:12:46 EST" finished-at="2020-01-13T23:12:47 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printMeetings -->
       </class> <!-- com.ww.assessment.jyostna.com.questions.WebDriverTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
